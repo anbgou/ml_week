@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Doctor AI 🌿</title>
+
+    <link rel="stylesheet" href="static/style.css?v=2">
+</head>
+<body>
+
+    <div class="card">
+        <h1>🌿 Plant Diseases Classification</h1>
+        <p>Завантаж фото листка для перевірки</p>
+
+        <label for="fileInput" class="upload-area">
+            <span id="fileName">Натисни тут, щоб вибрати фото</span>
+            <input type="file" id="fileInput" accept="image/*">
+        </label>
+
+        <img id="preview" src="" alt="Image preview">
+
+        <br><br>
+
+        <button onclick="analyzeImage()" id="btnAnalyze">Перевірити</button>
+
+        <div class="loader" id="loader"></div>
+
+        <div id="result">
+            <h2 id="resTitle"></h2>
+            <p id="resConf"></p>
+        </div>
+    </div>
+
+    <script src="static/script.js?V=55"></script>
+</body>
+</html>
